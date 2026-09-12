@@ -1,0 +1,23 @@
+version: "3.9"
+
+# Sobe os emuladores Firebase em container para nao depender de instalacao local.
+# Uso:
+#   docker compose -f tools/docker-compose.emulator.yml up
+
+services:
+  firebase:
+    image: node:20-bookworm
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: bash -lc "npm i -g firebase-tools && firebase emulators:start --only auth,firestore,functions,storage --project demo-test"
+    ports:
+      - "4000:4000"   # Emulator UI
+      - "5001:5001"   # Functions
+      - "8080:8080"   # Firestore
+      - "9099:9099"   # Auth
+      - "9199:9199"   # Storage
+    environment:
+      - FIRESTORE_EMULATOR_HOST=localhost:8080
+      - FIREBASE_AUTH_EMULATOR_HOST=localhost:9099
+      - FIREBASE_STORAGE_EMULATOR_HOST=localhost:9199

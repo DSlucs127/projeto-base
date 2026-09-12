@@ -1,0 +1,28 @@
+{
+  "name": "sunset",
+  "description": "Laranja quente, aconchegante. Bom para lifestyle, comida e social.",
+  "color": {
+    "light": {
+      "primary": "#C2410C",
+      "primaryHover": "#9A3412",
+      "onPrimary": "#FFFFFF",
+      "surface": "#FFFFFF",
+      "background": "#FFF7ED",
+      "ink": "#431407",
+      "muted": "#78716C",
+      "border": "#E7D8CC",
+      "danger": "#B91C1C"
+    },
+    "dark": {
+      "primary": "#FDBA74",
+      "primaryHover": "#FED7AA",
+      "onPrimary": "#431407",
+      "surface": "#1C1410",
+      "background": "#120B07",
+      "ink": "#FAEDE4",
+      "muted": "#C4B5AC",
+      "border": "#4A3428",
+      "danger": "#FCA5A5"
+    }
+  }
+}

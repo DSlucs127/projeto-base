@@ -1,0 +1,53 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper: garante autenticacao
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Helper: garante role admin no custom claim
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.role == 'admin';
+    }
+
+    // Helper: checa permissao granular de plugin (ex: "write:finance_entries")
+    function hasPluginPermission(perm) {
+      return isSignedIn() && perm in request.auth.token.permissions;
+    }
+
+    // ===== Colecoes canonicas do core =====
+    match /users/{userId} {
+      allow read:  if isSignedIn() && request.auth.uid == userId;
+      allow create: if isSignedIn() && request.auth.uid == userId;
+      allow update: if isSignedIn() && request.auth.uid == userId;
+      allow delete: if isAdmin();
+    }
+
+    match /plugin_manifests/{pluginId} {
+      allow read:   if isSignedIn();
+      allow write:  if isAdmin();
+    }
+
+    match /audit_logs/{logId} {
+      allow read:   if isAdmin();
+      // Escrita feita pelo backend (Cloud Functions com admin SDK), nao pelo client.
+      allow write:  if false;
+    }
+
+    // ===== Plugins =====
+    // Rules Firebase sao estaticas. Para cada plugin, declare e revise seus
+    // paths aqui antes do deploy. Exemplo de um plugin "finance":
+    match /finance/{document=**} {
+      allow read:  if isSignedIn();
+      allow write: if hasPluginPermission('write:finance_entries');
+    }
+
+    // Bloqueia qualquer outro path por padrao.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

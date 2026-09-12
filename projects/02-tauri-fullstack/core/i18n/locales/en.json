@@ -1,0 +1,10 @@
+{
+  "errors": {
+    "unauthenticated": "Authentication is required.",
+    "forbidden": "You do not have permission for this action.",
+    "invalidRequest": "Invalid request."
+  },
+  "auth": {
+    "invalidCredentials": "Invalid credentials."
+  }
+}

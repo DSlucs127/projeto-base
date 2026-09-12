@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Plugin Manifest",
+  "type": "object",
+  "required": ["id", "name", "version", "coreMinVersion", "permissions", "functions"],
+  "properties": {
+    "id":                { "type": "string", "pattern": "^[a-z][a-z0-9-]*(\\.[a-z][a-z0-9-]*)*$" },
+    "name":              { "type": "string", "minLength": 1 },
+    "version":           { "type": "string", "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$" },
+    "coreMinVersion":    { "type": "string", "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$" },
+    "description":       { "type": "string" },
+    "permissions": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z]+:[a-z_]+$" }
+    },
+    "firebase": {
+      "type": "object",
+      "properties": {
+        "collections":   { "type": "array", "items": { "type": "string" } },
+        "storage_paths": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "functions": {
+      "type": "object",
+      "required": ["module", "register"],
+      "properties": {
+        "module":   { "type": "string", "pattern": "^\\./functions/src/[A-Za-z0-9_./-]+\\.ts$" },
+        "register": { "type": "string", "pattern": "^[A-Za-z_$][A-Za-z0-9_$]*$" }
+      }
+    },
+    "android": {
+      "type": "object",
+      "properties": {
+        "package": { "type": "string" },
+        "routes":  { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "i18n": {
+      "type": "object",
+      "properties": {
+        "pt-BR": { "type": "string" },
+        "en":    { "type": "string" }
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "example.notes",
+  "name": "Example notes",
+  "description": "A minimal internal application plugin.",
+  "version": "0.1.0",
+  "coreMinVersion": "1.0.0",
+  "permissions": ["notes:read", "notes:write"],
+  "backend": {
+    "entrypoint": "backend/index.js"
+  },
+  "frontend": {
+    "routes": [
+      {
+        "path": "/plugins/example-notes",
+        "titleKey": "exampleNotes.title"
+      }
+    ]
+  },
+  "i18n": {
+    "pt-BR": "locales/pt-BR.json",
+    "en": "locales/en.json"
+  }
+}

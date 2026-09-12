@@ -1,0 +1,22 @@
+{
+  "name": "core-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/core/functions/src/index.js",
+  "engines": { "node": "20" },
+  "scripts": {
+    "prepare:plugins": "node scripts/bundle-plugins.mjs",
+    "build": "npm run prepare:plugins -- --clean && tsc -p tsconfig.json",
+    "pretypecheck": "npm run prepare:plugins",
+    "typecheck": "tsc --noEmit",
+    "test": "echo 'no tests yet' && exit 0"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^4.9.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.11.0"
+  }
+}

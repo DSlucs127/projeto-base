@@ -1,0 +1,37 @@
+.ds-button {
+  min-height: 2.75rem;
+  border: 1px solid transparent;
+  border-radius: var(--ds-radius-sm);
+  padding: 0.625rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.ds-button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--ds-color-primary) 45%, transparent);
+  outline-offset: 2px;
+}
+
+.ds-button--primary {
+  color: #fff;
+  background: var(--ds-color-primary);
+}
+
+.ds-button--primary:hover {
+  background: var(--ds-color-primary-hover);
+}
+
+.ds-button--secondary {
+  color: var(--ds-color-ink);
+  border-color: var(--ds-color-border);
+  background: var(--ds-color-surface);
+}
+
+.ds-card {
+  border: 1px solid var(--ds-color-border);
+  border-radius: var(--ds-radius-md);
+  padding: 1.5rem;
+  background: var(--ds-color-surface);
+  box-shadow: var(--ds-shadow-card);
+}

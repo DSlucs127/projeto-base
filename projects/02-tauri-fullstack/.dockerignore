@@ -1,0 +1,13 @@
+node_modules
+**/node_modules
+**/dist
+app/src-tauri/target
+.git
+.env
+.env.*
+!.env.example
+coverage
+*.log
+.idea
+.vscode
+.github

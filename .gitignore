@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+.turbo/
+.vite/
+*.tsbuildinfo
+.eslintcache
+
+# Firebase (01) - builds e segredos
+core/functions/lib/
+core/functions/src/generatedPlugins.ts
+.gradle/
+app/android/.gradle/
+app/android/build/
+app/android/app/build/
+app/android/local.properties
+app/android/app/release/
+app/android/app/debug/
+*.iml
+google-services.json
+*.jks
+*.keystore
+keystore.properties
+.emu-data/
+
+# Tauri/Rust (02)
+app/src-tauri/target/
+app/src-tauri/gen/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

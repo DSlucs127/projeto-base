@@ -1,0 +1,10 @@
+{
+  "errors": {
+    "unauthenticated": "Autenticacao necessaria.",
+    "forbidden": "Voce nao tem permissao para esta acao.",
+    "invalidRequest": "Solicitacao invalida."
+  },
+  "auth": {
+    "invalidCredentials": "Credenciais invalidas."
+  }
+}

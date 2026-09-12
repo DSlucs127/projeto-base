@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Generated from shared/design-system/tokens.json (dark). Do not edit by hand. -->
+    <color name="ds_color_primary">#7BB0FF</color>
+    <color name="ds_color_on_primary">#001A41</color>
+    <color name="ds_color_surface">#101114</color>
+    <color name="ds_color_background">#0A0B0E</color>
+    <color name="ds_color_on_surface">#E8EAF0</color>
+    <color name="ds_color_muted">#B3B8C7</color>
+    <color name="ds_color_border">#353946</color>
+    <color name="ds_color_error">#FF6B7A</color>
+</resources>

@@ -1,0 +1,28 @@
+{
+  "app": {
+    "eyebrow": "Template escalavel",
+    "title": "Base Tauri Fullstack"
+  },
+  "language": {
+    "toggle": "Alterar idioma",
+    "english": "English",
+    "portuguese": "Portugues"
+  },
+  "core": {
+    "title": "Core fechado, plugins extensivos",
+    "description": "Autenticacao, seguranca, PostgreSQL criptografado, internacionalizacao e design system sao responsabilidades centrais."
+  },
+  "plugins": {
+    "title": "Plugins",
+    "description": "Modulos internos liberados para a sua conta.",
+    "empty": "Nenhum plugin disponivel para o seu usuario.",
+    "unavailable": "Nao foi possivel carregar plugins (sem sessao ou API indisponivel)."
+  },
+  "health": {
+    "title": "Status da API",
+    "loading": "Verificando conexao segura...",
+    "available": "API disponivel.",
+    "unavailable": "API indisponivel. Inicie o servidor Node ou verifique a configuracao.",
+    "retry": "Verificar novamente"
+  }
+}

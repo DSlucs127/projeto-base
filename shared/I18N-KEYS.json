@@ -1,0 +1,39 @@
+{
+  "common": {
+    "app.name":         { "pt-BR": "Projeto",        "en": "Project" },
+    "app.loading":      { "pt-BR": "Carregando...",   "en": "Loading..." },
+    "app.error.generic": { "pt-BR": "Algo deu errado. Tente novamente.", "en": "Something went wrong. Please try again." },
+    "app.save":         { "pt-BR": "Salvar",          "en": "Save" },
+    "app.cancel":       { "pt-BR": "Cancelar",        "en": "Cancel" },
+    "app.delete":       { "pt-BR": "Excluir",         "en": "Delete" },
+    "app.edit":         { "pt-BR": "Editar",          "en": "Edit" },
+    "app.confirm":      { "pt-BR": "Confirmar",       "en": "Confirm" },
+    "app.back":         { "pt-BR": "Voltar",          "en": "Back" },
+    "app.next":         { "pt-BR": "Proximo",         "en": "Next" },
+    "app.search":       { "pt-BR": "Buscar",          "en": "Search" },
+    "app.empty":        { "pt-BR": "Nada por aqui.",  "en": "Nothing here." }
+  },
+  "auth": {
+    "auth.login.title":        { "pt-BR": "Entrar",                         "en": "Sign in" },
+    "auth.login.email":        { "pt-BR": "E-mail",                         "en": "Email" },
+    "auth.login.password":     { "pt-BR": "Senha",                          "en": "Password" },
+    "auth.login.submit":       { "pt-BR": "Entrar",                         "en": "Sign in" },
+    "auth.login.forgot":       { "pt-BR": "Esqueci minha senha",            "en": "Forgot my password" },
+    "auth.logout":             { "pt-BR": "Sair",                           "en": "Sign out" },
+    "auth.signup.title":       { "pt-BR": "Criar conta",                    "en": "Create account" },
+    "auth.signup.submit":      { "pt-BR": "Cadastrar",                      "en": "Sign up" },
+    "auth.error.invalid":      { "pt-BR": "Credenciais invalidas.",         "en": "Invalid credentials." },
+    "auth.error.locked":       { "pt-BR": "Conta bloqueada.",               "en": "Account locked." }
+  },
+  "plugins": {
+    "plugins.list.title":      { "pt-BR": "Plugins instalados",             "en": "Installed plugins" },
+    "plugins.list.empty":      { "pt-BR": "Nenhum plugin ativo.",           "en": "No active plugins." },
+    "plugins.registry.invalid": { "pt-BR": "Plugin invalido ou incompativel.", "en": "Invalid or incompatible plugin." }
+  },
+  "errors": {
+    "errors.403":        { "pt-BR": "Voce nao tem permissao.",      "en": "You don't have permission." },
+    "errors.404":        { "pt-BR": "Recurso nao encontrado.",     "en": "Resource not found." },
+    "errors.500":        { "pt-BR": "Erro interno do servidor.",   "en": "Internal server error." },
+    "errors.network":    { "pt-BR": "Falha de rede.",                "en": "Network failure." }
+  }
+}

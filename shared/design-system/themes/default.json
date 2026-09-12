@@ -1,0 +1,28 @@
+{
+  "name": "default",
+  "description": "Azul neutro padrao do repositorio.",
+  "color": {
+    "light": {
+      "primary": "#0B5FFF",
+      "primaryHover": "#004BCC",
+      "onPrimary": "#FFFFFF",
+      "surface": "#FFFFFF",
+      "background": "#F6F7FB",
+      "ink": "#101114",
+      "muted": "#5F6573",
+      "border": "#D9DCE5",
+      "danger": "#D7263D"
+    },
+    "dark": {
+      "primary": "#7BB0FF",
+      "primaryHover": "#A8CBFF",
+      "onPrimary": "#001A41",
+      "surface": "#101114",
+      "background": "#0A0B0E",
+      "ink": "#E8EAF0",
+      "muted": "#B3B8C7",
+      "border": "#353946",
+      "danger": "#FF6B7A"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+# Dependencies and build output
+node_modules/
+dist/
+.vite/
+coverage/
+.turbo/
+*.tsbuildinfo
+.eslintcache
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Prisma
+core/api/prisma/dev.db*
+
+# Tauri/Rust
+app/src-tauri/target/
+app/src-tauri/gen/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

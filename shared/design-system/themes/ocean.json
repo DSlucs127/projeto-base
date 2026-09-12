@@ -1,0 +1,28 @@
+{
+  "name": "ocean",
+  "description": "Ciano/petróleo, fundos frios. Bom para produtividade e dados.",
+  "color": {
+    "light": {
+      "primary": "#0E7490",
+      "primaryHover": "#155E75",
+      "onPrimary": "#FFFFFF",
+      "surface": "#FFFFFF",
+      "background": "#F0F9FF",
+      "ink": "#082F49",
+      "muted": "#475569",
+      "border": "#CBD5E1",
+      "danger": "#DC2626"
+    },
+    "dark": {
+      "primary": "#67E8F9",
+      "primaryHover": "#A5F3FC",
+      "onPrimary": "#083344",
+      "surface": "#0F172A",
+      "background": "#020617",
+      "ink": "#E2E8F0",
+      "muted": "#94A3B8",
+      "border": "#334155",
+      "danger": "#F87171"
+    }
+  }
+}

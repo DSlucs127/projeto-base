@@ -1,0 +1,42 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  firebase-android:
+    name: firebase-android (validate + typecheck + build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/01-firebase-android
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm run validate
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+
+  tauri-fullstack:
+    name: tauri-fullstack (validate + typecheck + test)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/02-tauri-fullstack
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm validate
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm --filter @template/api prisma:generate
+      - run: pnpm --filter @template/api build

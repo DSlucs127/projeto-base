@@ -1,0 +1,28 @@
+{
+  "name": "mono",
+  "description": "Preto sobre branco, sem cor de marca. Bom para B2B e documentos.",
+  "color": {
+    "light": {
+      "primary": "#18181B",
+      "primaryHover": "#27272A",
+      "onPrimary": "#FFFFFF",
+      "surface": "#FFFFFF",
+      "background": "#FAFAFA",
+      "ink": "#18181B",
+      "muted": "#52525B",
+      "border": "#E4E4E7",
+      "danger": "#DC2626"
+    },
+    "dark": {
+      "primary": "#FAFAFA",
+      "primaryHover": "#FFFFFF",
+      "onPrimary": "#18181B",
+      "surface": "#1C1C1F",
+      "background": "#0F0F10",
+      "ink": "#F4F4F5",
+      "muted": "#A1A1AA",
+      "border": "#3F3F46",
+      "danger": "#F87171"
+    }
+  }
+}

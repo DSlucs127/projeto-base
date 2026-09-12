@@ -1,0 +1,14 @@
+# Keystore
+*.jks
+*.keystore
+google-services.json
+/app/build
+/app/release
+.gradle/
+build/
+local.properties
+captures/
+.externalNativeBuild
+.cxx
+*.iml
+.idea/

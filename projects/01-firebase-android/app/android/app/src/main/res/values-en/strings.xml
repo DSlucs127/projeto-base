@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Chaves canonicas de shared/I18N-KEYS.json (pontos viram underscore). -->
+    <string name="app_name">Project</string>
+    <string name="app_loading">Loading...</string>
+    <string name="app_error_generic">Something went wrong. Please try again.</string>
+    <string name="app_save">Save</string>
+    <string name="app_cancel">Cancel</string>
+    <string name="app_delete">Delete</string>
+    <string name="app_edit">Edit</string>
+    <string name="app_confirm">Confirm</string>
+    <string name="app_back">Back</string>
+    <string name="app_next">Next</string>
+    <string name="app_search">Search</string>
+    <string name="app_empty">Nothing here.</string>
+    <string name="auth_login_title">Sign in</string>
+    <string name="auth_login_email">Email</string>
+    <string name="auth_login_password">Password</string>
+    <string name="auth_login_submit">Sign in</string>
+    <string name="auth_login_forgot">Forgot my password</string>
+    <string name="auth_logout">Sign out</string>
+    <string name="auth_signup_title">Create account</string>
+    <string name="auth_signup_submit">Sign up</string>
+    <string name="auth_error_invalid">Invalid credentials.</string>
+    <string name="auth_error_locked">Account locked.</string>
+    <string name="plugins_list_title">Installed plugins</string>
+    <string name="plugins_list_empty">No active plugins.</string>
+    <string name="plugins_registry_invalid">Invalid or incompatible plugin.</string>
+    <string name="errors_403">You don\'t have permission.</string>
+    <string name="errors_404">Resource not found.</string>
+    <string name="errors_500">Internal server error.</string>
+    <string name="errors_network">Network failure.</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Generated from shared/design-system/tokens.json (light). Do not edit by hand. -->
+    <color name="ds_color_primary">#0B5FFF</color>
+    <color name="ds_color_on_primary">#FFFFFF</color>
+    <color name="ds_color_surface">#FFFFFF</color>
+    <color name="ds_color_background">#F6F7FB</color>
+    <color name="ds_color_on_surface">#101114</color>
+    <color name="ds_color_muted">#5F6573</color>
+    <color name="ds_color_border">#D9DCE5</color>
+    <color name="ds_color_error">#D7263D</color>
+    <color name="launcher_background">#0B5FFF</color>
+</resources>

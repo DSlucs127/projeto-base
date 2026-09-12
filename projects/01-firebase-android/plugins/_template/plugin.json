@@ -1,0 +1,28 @@
+{
+  "$schema": "./plugin.schema.json",
+  "id": "template.example",
+  "name": "Example Plugin",
+  "version": "0.1.0",
+  "coreMinVersion": "1.0.0",
+  "description": "Copie este template para criar um novo plugin.",
+  "permissions": [
+    "read:users",
+    "write:example_entries"
+  ],
+  "firebase": {
+    "collections": ["example_entries"],
+    "storage_paths": []
+  },
+  "functions": {
+    "module": "./functions/src/index.ts",
+    "register": "registerPlugin"
+  },
+  "android": {
+    "package": "app.plugins.example",
+    "routes": ["/example"]
+  },
+  "i18n": {
+    "pt-BR": "./locales/pt-BR.json",
+    "en":    "./locales/en.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "tools-firebase-android",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "validate": "npm run validate:i18n && npm run validate:plugins && npm run validate:security",
+    "validate:i18n": "tsx scripts/check-i18n.ts",
+    "validate:plugins": "tsx scripts/check-plugins.ts",
+    "validate:security": "tsx scripts/check-security.ts",
+    "agent:sync": "tsx scripts/agent-sync.ts",
+    "smoke": "tsx scripts/smoke.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "ajv": "^8.12.0",
+    "ajv-formats": "^3.0.1"
+  }
+}

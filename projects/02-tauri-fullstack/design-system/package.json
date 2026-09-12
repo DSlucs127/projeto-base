@@ -1,0 +1,21 @@
+{
+  "name": "@template/design-system",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    "./tokens.css": "./src/tokens.css",
+    "./components.css": "./src/components.css",
+    "./components/Button": "./src/components/Button.tsx",
+    "./components/Card": "./src/components/Card.tsx"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "^5.7.2"
+  }
+}

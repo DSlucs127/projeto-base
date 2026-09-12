@@ -1,0 +1,32 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.role == 'admin';
+    }
+
+    // Uploads de avatares: cada usuario controla o proprio arquivo
+    match /users/{userId}/{allPaths=**} {
+      allow read:   if isSignedIn();
+      allow write:  if isSignedIn() && request.auth.uid == userId
+                       && request.resource.size < 5 * 1024 * 1024
+                       && request.resource.contentType.matches('image/.*');
+    }
+
+    // Plugin uploads: restritos por permissao
+    match /plugins/{pluginId}/{allPaths=**} {
+      allow read:   if isSignedIn();
+      allow write:  if isAdmin();
+    }
+
+    // Bloqueia qualquer outro path
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

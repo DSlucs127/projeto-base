@@ -1,0 +1,28 @@
+{
+  "name": "forest",
+  "description": "Verde calmo, fundos suaves. Bom para saúde, finanças pessoais e sustentabilidade.",
+  "color": {
+    "light": {
+      "primary": "#15803D",
+      "primaryHover": "#166534",
+      "onPrimary": "#FFFFFF",
+      "surface": "#FFFFFF",
+      "background": "#F0FDF4",
+      "ink": "#182B20",
+      "muted": "#5C6F64",
+      "border": "#D3E0D9",
+      "danger": "#DC2626"
+    },
+    "dark": {
+      "primary": "#86EFAC",
+      "primaryHover": "#BBF7D0",
+      "onPrimary": "#052E16",
+      "surface": "#0F1F16",
+      "background": "#07120C",
+      "ink": "#DCFCE7",
+      "muted": "#9DB8A8",
+      "border": "#2A4234",
+      "danger": "#F87171"
+    }
+  }
+}

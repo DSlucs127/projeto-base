@@ -1,0 +1,46 @@
+{
+  "name": "tauri-fullstack-template",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,app -c blue,green \"pnpm --filter @template/api dev\" \"pnpm --filter @template/app dev\"",
+    "dev:api": "pnpm --filter @template/api dev",
+    "dev:app": "pnpm --filter @template/app dev",
+    "build": "pnpm --filter @template/api prisma:generate && pnpm --filter @template/api build && pnpm --filter @template/app build",
+    "typecheck": "pnpm --filter @template/api typecheck && pnpm --filter @template/design-system typecheck && pnpm --filter @template/app typecheck",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "pnpm --filter @template/api test && pnpm --filter @template/app test",
+    "validate": "pnpm validate:i18n && pnpm validate:plugins && pnpm validate:security && pnpm validate:agent",
+    "validate:i18n": "tsx tools/scripts/check-i18n.ts",
+    "validate:plugins": "tsx tools/scripts/check-plugins.ts",
+    "validate:security": "tsx tools/scripts/check-security.ts",
+    "validate:agent": "tsx tools/scripts/agent-sync.ts --check",
+    "agent:sync": "tsx tools/scripts/agent-sync.ts",
+    "docker:up": "docker compose up --build -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f --tail=100",
+    "smoke": "tsx tools/scripts/smoke.ts",
+    "tauri": "pnpm --filter @template/app tauri",
+    "tokens:sync": "node ../../shared/design-system/sync-tokens.mjs --css design-system/src/tokens.css",
+    "theme": "node ../../shared/design-system/sync-tokens.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-security": "^3.0.1",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.19.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "concurrently": "^9.1.0",
+    "tsx": "^4.19.2"
+  }
+}

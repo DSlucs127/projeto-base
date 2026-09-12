@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Chaves canonicas de shared/I18N-KEYS.json (pontos viram underscore). -->
+    <string name="app_name">Projeto</string>
+    <string name="app_loading">Carregando...</string>
+    <string name="app_error_generic">Algo deu errado. Tente novamente.</string>
+    <string name="app_save">Salvar</string>
+    <string name="app_cancel">Cancelar</string>
+    <string name="app_delete">Excluir</string>
+    <string name="app_edit">Editar</string>
+    <string name="app_confirm">Confirmar</string>
+    <string name="app_back">Voltar</string>
+    <string name="app_next">Proximo</string>
+    <string name="app_search">Buscar</string>
+    <string name="app_empty">Nada por aqui.</string>
+    <string name="auth_login_title">Entrar</string>
+    <string name="auth_login_email">E-mail</string>
+    <string name="auth_login_password">Senha</string>
+    <string name="auth_login_submit">Entrar</string>
+    <string name="auth_login_forgot">Esqueci minha senha</string>
+    <string name="auth_logout">Sair</string>
+    <string name="auth_signup_title">Criar conta</string>
+    <string name="auth_signup_submit">Cadastrar</string>
+    <string name="auth_error_invalid">Credenciais invalidas.</string>
+    <string name="auth_error_locked">Conta bloqueada.</string>
+    <string name="plugins_list_title">Plugins instalados</string>
+    <string name="plugins_list_empty">Nenhum plugin ativo.</string>
+    <string name="plugins_registry_invalid">Plugin invalido ou incompativel.</string>
+    <string name="errors_403">Voce nao tem permissao.</string>
+    <string name="errors_404">Recurso nao encontrado.</string>
+    <string name="errors_500">Erro interno do servidor.</string>
+    <string name="errors_network">Falha de rede.</string>
+</resources>

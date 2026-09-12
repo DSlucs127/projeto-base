@@ -1,0 +1,28 @@
+{
+  "app": {
+    "eyebrow": "Scalable template",
+    "title": "Tauri Fullstack Base"
+  },
+  "language": {
+    "toggle": "Change language",
+    "english": "English",
+    "portuguese": "Portuguese"
+  },
+  "core": {
+    "title": "Closed core, extensible plugins",
+    "description": "Authentication, security, encrypted PostgreSQL, internationalization, and the design system are central responsibilities."
+  },
+  "plugins": {
+    "title": "Plugins",
+    "description": "Internal modules available to your account.",
+    "empty": "No plugins available for your user.",
+    "unavailable": "Could not load plugins (no session or API unavailable)."
+  },
+  "health": {
+    "title": "API status",
+    "loading": "Checking secure connection...",
+    "available": "API is available.",
+    "unavailable": "API is unavailable. Start the Node server or check its configuration.",
+    "retry": "Check again"
+  }
+}
